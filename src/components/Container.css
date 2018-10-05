@@ -1,0 +1,44 @@
+@font-face{font-family:'Calluna';
+ src:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/callunasansregular-webfont.woff') format('woff');
+}
+body {
+  font-family: Calluna, Arial, sans-serif;
+}
+#columns {
+	column-width: 320px;
+	column-gap: 15px;
+  width: 90%;
+	margin: 15px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div#columns figure {
+	border: 2px solid #fcfcfc;
+	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+	margin: 0 2px 15px;
+	padding: 15px;
+	padding-bottom: 10px;
+  display: inline-block;
+  flex: 1;
+  width: 90%;
+}
+
+div#columns small a {
+  color: #666;
+  text-decoration: none;
+  transition: .4s color;
+}
+
+div#columns:hover figure:not(:hover) {
+	opacity: 0.4;
+}
+
+@media screen and (max-width: 750px) {
+  #columns {
+    column-gap: 0px;
+    margin: 0px 0px 0 -3px;
+
+  }
+  div#columns figure { width: 100%; }
+}

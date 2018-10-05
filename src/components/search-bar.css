@@ -1,0 +1,25 @@
+input[type=search] {
+  outline: none;
+  margin-top: 6px;
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  font-family: inherit;
+  font-size: 100%;
+  border: solid 1px #ccc;
+  width: 80%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding-left: 27px;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  input[type=search] {
+    width: 88%;
+  }
+}
