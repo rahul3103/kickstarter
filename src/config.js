@@ -3,7 +3,7 @@ const COLORS = ['#FFEBEE', '#FCE4EC', '#F3E5F5', '#EDE7F6', '#E8EAF6', '#E3F2FD'
                 '#FFF3E0', '#FBE9E7', '#EFEBE9', '#FAFAFA', '#ECEFF1']
 
 export default {
-  API: 'http://starlord.hackerearth.com/kickstarter',
+  API: 'https://demo2837922.mockable.io/kickstarter',
   KICK_URL: 'https://www.kickstarter.com/',
   CURRENCY: {
     'usd': '$',
