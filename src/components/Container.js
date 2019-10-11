@@ -16,7 +16,7 @@ class Container extends Component {
     end: 0
   }
 
-  componentWillMount() {
+  componentDidMount() {
     fetch(Config.API)
       .then((resp) => resp.json())
       .then((data) => {
@@ -30,9 +30,6 @@ class Container extends Component {
         const end = data.length >= 10 ? 9 : data.length - 1;
         this.setState({ locations, end });
       });
-  }
-
-  componentDidMount() {
     window.addEventListener('scroll', this.handleOnScroll);
   }
 
